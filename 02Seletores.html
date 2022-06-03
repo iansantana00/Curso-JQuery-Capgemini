@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletores - JQuery</title>
+
+        <!--JQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <!--JS-->
+        <script>
+
+            //Ao carregar o documeto 
+            //Quando o documento estiver pronto
+            $(document).ready(function(){
+
+                //Variáveis
+                //Trabalhar com a tag input
+                //Selecionando o valor (val)
+                var campo = $("input").val();
+                //Trabalhar com id (#) e selecionar o texto
+                var titulo = $("#titulo").html();
+                //Trabalhar com classe (.)
+                var subtitulo = $(".subtitulo").html();
+
+                //Exibir
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+
+
+            });
+
+                
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <!--As 3 maneiras de trabalhar com Seletores-->
+        <input type="text" value="Campo Nome">
+        <h1 id="titulo">Título em h1</h1>
+        <h2 class="subtitulo">Título em h2</h2>
+
+    </body>
+
+
+
+</html>

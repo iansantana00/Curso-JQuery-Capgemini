@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slide - JQuery</title>
+
+        <!--JQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <!--JS-->
+        <script>
+
+            //Ao carregar o documeto 
+            //Quando o documento estiver pronto
+            $(document).ready(function(){
+                
+                //Ocultar
+                $(".ocultar").click(function(){
+                    $(".mensagem").slideUp();
+                })
+
+                //Exibir
+                $(".exibir").click(function(){
+                    $(".mensagem").slideDown();
+                })
+
+
+
+            });
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1 class="exibir">Exibir</h1>
+        <h1 class="ocultar">Ocultar</h1>
+
+        <hr> <!--Coloca um linha separadora-->
+
+        <h1 class="mensagem">Olá</h1>
+
+        
+    </body>
+
+
+
+</html>
